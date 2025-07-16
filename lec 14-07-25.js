@@ -31,3 +31,5 @@ console.log("XY",xy);
 sumOfTwo(10,20);
 mulOfTwo(10,20);
 divOfTwo(10,20);
+
+//  xmodules is wrapped in immediate invoked function
