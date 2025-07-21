@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <h2>🍴 Food Blog</h2>
+    <div>
+      <body>
+        <button onclick="window.location.href='index.html'" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin: 10px;">
+          ← Back to Welcome Page
+        </button>
+      
+      
+        <h1>My Food Blog</h1>
+        
+      
+      <button onclick="toggleView('home')">Home</button>
+      <button onclick="toggleView('admin')">Admin</button>
+    </div>
+  </nav>
+
+  <div class="filters">
+    <input type="text" id="searchInput" placeholder="Search by title..." />
+    <select id="authorFilter">
+      <option value="">All Authors</option>
+    </select>
+    <select id="categoryFilter">
+      <option value="">All Categories</option>
+    </select>
+    <select id="sortBy">
+      <option value="newest">Newest First</option>
+      <option value="oldest">Oldest First</option>
+    </select>
+  </div>
+
+  <div id="homeView">
+    <div id="blogList"></div>
+  </div>
+
+  <div id="adminView" class="hidden">
+    <h3>Add New Blog Post</h3>
+    <form id="blogForm">
+      <input type="text" id="title" placeholder="Title" required><br>
+      <input type="text" id="author" placeholder="Author" required><br>
+      <input type="text" id="category" placeholder="Category" required><br>
+      <input type="date" id="date" required><br>
+      <input type="text" id="image" placeholder="Image URL"><br>
+      <textarea id="content" placeholder="Write your food blog..." required></textarea><br>
+      <button type="submit">Add Blog</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
