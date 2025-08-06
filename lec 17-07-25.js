@@ -26,7 +26,7 @@
 const EventEmitter = require('node:events');
 const eventEmitter = new EventEmitter();
 
-// 1. Regular listener
+
 const onStart = () => {
   console.log('started');
 };
@@ -55,3 +55,9 @@ eventEmitter.removeAllListeners('start');
 
 eventEmitter.emit('start'); 
 console.log('--- Fourth emit (after removeAllListeners) ---');
+
+//Node js ---> modules inbuilt
+
+//dns domain name system
+//multi tenancy backend
+//lookup : give info of the thing
